@@ -1,0 +1,13 @@
+/* verification.css — المجموعة 1: الإجابة عن أسئلة التحقق من الملكية */
+.verify-box {
+  max-width: 640px; margin: 20px auto; background: var(--card);
+  border: 1px solid var(--line); border-radius: 18px; padding: 26px;
+}
+.verify-box h1 { margin: 0 0 4px; color: var(--navy); font-size: 26px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .verify-box h1 { color: #fff; } }
+.verify-item { display: flex; gap: 12px; align-items: center; margin-top: 14px; }
+.verify-item .ic { font-size: 22px; width: 42px; height: 42px; border-radius: 12px; background: var(--bg); display: grid; place-items: center; }
+.q { background: var(--bg); border-radius: 12px; padding: 14px; margin-top: 14px; }
+.q b { color: var(--orange); }
+.verify-done { text-align: center; padding: 20px 0; }
+.verify-done .big { font-size: 56px; }

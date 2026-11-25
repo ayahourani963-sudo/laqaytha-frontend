@@ -1,0 +1,4 @@
+/* matches.css — المجموعة 3: نتائج المطابقة */
+.bar2 { height: 6px; background: var(--line); border-radius: 9px; margin: 8px 0 4px; overflow: hidden; }
+.bar2 i { display: block; height: 100%; background: var(--orange); }
+.score { color: var(--orange); }

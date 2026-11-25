@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لقيتها – منصة المفقودات والموجودات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- 1) التنسيق العام -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- 2) تنسيق الصفحات (ملف لكل مجموعة) -->
+  <link rel="stylesheet" href="css/pages/auth.css">
+  <link rel="stylesheet" href="css/pages/notifications.css">
+  <link rel="stylesheet" href="css/pages/verification.css">
+  <link rel="stylesheet" href="css/pages/reports.css">
+  <link rel="stylesheet" href="css/pages/report-actions.css">
+  <link rel="stylesheet" href="css/pages/matches.css">
+  <link rel="stylesheet" href="css/pages/search.css">
+  <link rel="stylesheet" href="css/pages/support.css">
+  <link rel="stylesheet" href="css/pages/claims.css">
+  <link rel="stylesheet" href="css/pages/chat.css">
+</head>
+<body>
+  <header id="app-header"></header>
+  <main id="app-main"></main>
+  <footer class="site-footer">لقيتها — منصة سورية لإعادة الأمانات إلى أصحابها</footer>
+  <div id="toast" class="toast" hidden></div>
+
+  <!-- ترتيب التحميل مهم: الأساسيات ← API ← البيانات الوهمية ← الخدمات ← الشاشات ← الموجّه ← main -->
+  <script src="js/config.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/ui.js"></script>
+
+  <script src="js/services/api.js"></script>
+
+  <script src="js/mocks/items.mock.js"></script>
+  <script src="js/mocks/auth.mock.js"></script>
+  <script src="js/mocks/notifications.mock.js"></script>
+  <script src="js/mocks/verification.mock.js"></script>
+  <script src="js/mocks/claims.mock.js"></script>
+  <script src="js/mocks/chat.mock.js"></script>
+  <script src="js/mocks/support.mock.js"></script>
+
+  <script src="js/services/auth-service.js"></script>
+  <script src="js/services/notifications-service.js"></script>
+  <script src="js/services/items-service.js"></script>
+  <script src="js/services/claims-service.js"></script>
+  <script src="js/services/chat-service.js"></script>
+  <script src="js/services/support-service.js"></script>
+
+  <script src="js/views/signup.js"></script>
+  <script src="js/views/login.js"></script>
+  <script src="js/views/notifications.js"></script>
+  <script src="js/views/verification.js"></script>
+  <script src="js/views/reports.js"></script>
+  <script src="js/views/create-lost.js"></script>
+  <script src="js/views/create-found.js"></script>
+  <script src="js/views/report-details.js"></script>
+  <script src="js/views/edit-report.js"></script>
+  <script src="js/views/close-report.js"></script>
+  <script src="js/views/update-status.js"></script>
+  <script src="js/views/match-results.js"></script>
+  <script src="js/views/search.js"></script>
+  <script src="js/views/support.js"></script>
+  <script src="js/views/claims.js"></script>
+  <script src="js/views/chat.js"></script>
+
+  <script src="js/router.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

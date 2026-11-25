@@ -1,0 +1,10 @@
+/* auth.css — المجموعة 1: إنشاء حساب + تسجيل الدخول */
+.auth-box {
+  max-width: 480px; margin: 20px auto; background: var(--card);
+  border: 1px solid var(--line); border-radius: 18px; padding: 26px;
+}
+.auth-box.wide { max-width: 640px; }
+.auth-box h1 { margin: 0 0 4px; color: var(--navy); font-size: 26px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .auth-box h1 { color: #fff; } }
+.auth-alt { text-align: center; margin-top: 16px; font-size: 15px; }
+.auth-alt a { color: var(--orange); font-weight: 600; }

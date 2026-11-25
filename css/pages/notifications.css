@@ -1,0 +1,22 @@
+/* notifications.css — المجموعة 1: الإشعارات */
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.tabs button {
+  border: 1.5px solid var(--line); background: var(--card); color: var(--text);
+  font: inherit; padding: 6px 16px; border-radius: 99px; cursor: pointer;
+}
+.tabs button.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+.tabs .push-end { margin-inline-start: auto; }
+
+.nt {
+  display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: 12px;
+  background: var(--card); border: 1px solid var(--line); margin-bottom: 10px;
+  border-inline-start: 5px solid var(--line);
+}
+.nt.unread { border-inline-start-color: var(--orange); background: var(--soft); }
+.nt .ic {
+  font-size: 22px; width: 42px; height: 42px; border-radius: 12px;
+  background: var(--bg); display: grid; place-items: center; flex: none;
+}
+.nt .body { flex: 1; }
+.nt h4 { margin: 0; font-size: 16px; }
+.nt .btn { margin-top: 8px; }

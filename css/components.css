@@ -1,0 +1,71 @@
+/* components.css — button / card / form / modal */
+.btn {
+  display: inline-block; border: 0; cursor: pointer; font: inherit; font-weight: 600;
+  padding: 10px 20px; border-radius: 10px; background: var(--orange); color: #fff;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn.ghost { background: transparent; border: 2px solid #fff; color: #fff; padding: 8px 18px; }
+.btn.navy { background: var(--navy); }
+.btn.line { background: transparent; border: 2px solid var(--orange); color: var(--orange); }
+.btn.full { width: 100%; margin-top: 20px; }
+.btn.small { padding: 6px 16px; }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+.muted { color: var(--muted); font-size: 14px; }
+.err { color: var(--danger); font-size: 13px; min-height: 18px; }
+.note { background: var(--soft); border-radius: 10px; padding: 10px 14px; font-size: 14px; margin: 14px 0; }
+
+.tag { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 99px; font-weight: 600; }
+.tag.lost  { background: var(--soft); color: var(--orange); }
+.tag.found { background: #e1e5ee; color: var(--navy); }
+
+.page-title { color: var(--navy); margin: 6px 0 14px; font-size: 24px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .page-title { color: #fff; } }
+
+/* toast */
+.toast {
+  position: fixed; bottom: 20px; inset-inline: 0; margin: auto; width: max-content; max-width: 90%;
+  background: var(--navy); color: #fff; padding: 10px 20px;
+  border-radius: 99px; border: 2px solid var(--orange); z-index: 20;
+}
+
+/* modal */
+.modal-backdrop {
+  position: fixed; inset: 0; background: #0009; z-index: 30;
+  display: grid; place-items: center; padding: 16px;
+}
+.modal { background: var(--card); border-radius: 16px; padding: 22px; max-width: 440px; width: 100%; }
+.modal h3 { margin: 0 0 8px; }
+.modal .actions { display: flex; gap: 8px; justify-content: flex-start; margin-top: 18px; }
+
+/* شاشة قيد التطوير (للصفحات التي لم تُنفَّذ بعد) */
+.stub { text-align: center; padding: 50px 16px; }
+.stub .big { font-size: 48px; }
+
+/* حاوية صفحة عامة (نماذج وتفاصيل) */
+.page-box {
+  max-width: 640px; margin: 20px auto; background: var(--card);
+  border: 1px solid var(--line); border-radius: 18px; padding: 26px;
+}
+.page-box.full { max-width: 1000px; }
+.page-box h1 { margin: 0 0 4px; color: var(--navy); font-size: 26px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .page-box h1 { color: #fff; } }
+.page-head { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.page-head .page-title { margin: 0; flex: 1; }
+.btn.center { text-align: center; }
+.btn.full + .btn.full { margin-top: 8px; }
+.spaced { margin: 12px 0; }
+.grow { flex: 1; min-width: 0; }
+.clip { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.actions-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+label.choice { display: flex; align-items: center; gap: 8px; font-weight: 400; }
+label.choice input { width: auto; }
+
+.tag.st { background: var(--bg); color: var(--muted); }
+.tag.st.solved { background: var(--navy); color: #fff; }
+.q { background: var(--bg); border-radius: 12px; padding: 14px; margin-top: 14px; }
+.q b { color: var(--orange); }
+.ic { font-size: 22px; width: 42px; height: 42px; border-radius: 12px; background: var(--bg); display: grid; place-items: center; flex: none; }
+
+.nowrap { white-space: nowrap; }

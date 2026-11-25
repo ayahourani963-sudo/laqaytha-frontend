@@ -1,0 +1,28 @@
+/* variables.css — الألوان والخطوط والثيم */
+:root {
+  --navy: #14213d;
+  --orange: #f77f00;
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --soft: #fff3e6;
+  --danger: #dc2626;
+  --radius: 14px;
+  --font: Cairo, Tahoma, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1526; --card: #16213a; --text: #e5e7eb;
+    --muted: #9ca3af; --line: #2a3856; --soft: #2a2418;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1526; --card: #16213a; --text: #e5e7eb;
+  --muted: #9ca3af; --line: #2a3856; --soft: #2a2418;
+  color-scheme: dark;
+}

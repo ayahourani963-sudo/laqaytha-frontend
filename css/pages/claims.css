@@ -1,0 +1,8 @@
+/* claims.css — المجموعة 5: طلبات المطالبة */
+.claim-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; transition: border-color .2s; }
+.claim-row:hover { border-color: var(--orange); }
+.claim-row h3 { margin: 6px 0 2px; }
+.claim-card { margin-top: 12px; }
+.cinfo { display: flex; gap: 12px; align-items: center; }
+.claim-card details { margin: 10px 0; }
+.claim-card summary { cursor: pointer; color: var(--orange); font-weight: 600; }

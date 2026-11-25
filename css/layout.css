@@ -1,0 +1,39 @@
+/* layout.css — header / nav / container */
+.site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 5; }
+.site-header .bar {
+  max-width: 1050px; margin: auto; padding: 10px 16px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.logo { font-weight: 800; font-size: 22px; display: flex; align-items: center; gap: 8px; }
+.logo b {
+  background: var(--orange); width: 34px; height: 34px;
+  border-radius: 10px; display: grid; place-items: center;
+}
+
+.nav { margin-inline-start: auto; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.nav a, .nav button.link {
+  padding: 6px 12px; border-radius: 8px; font-size: 15px;
+  background: none; border: 0; color: inherit; font-family: inherit; cursor: pointer;
+}
+.nav a:hover, .nav button.link:hover { background: #ffffff1f; }
+.nav a.active { background: #ffffff26; }
+.nav .badge {
+  background: var(--orange); color: #fff; font-size: 11px;
+  border-radius: 99px; padding: 0 6px; margin-inline-start: 4px;
+}
+
+#app-main { max-width: 1050px; margin: auto; padding: 20px 16px 40px; min-height: 60vh; }
+
+.site-footer {
+  background: var(--navy); color: #cbd5e1;
+  text-align: center; padding: 20px; font-size: 14px;
+}
+
+.row { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 520px) { .row { grid-template-columns: 1fr; } }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+/* أزرار الدخول/التسجيل داخل الـ nav تحتفظ بلونها */
+.nav a.btn { padding: 8px 18px; }
+.nav a.btn:hover, .nav a.btn.active { background: var(--orange); }
+.nav a.btn.ghost:hover, .nav a.btn.ghost.active { background: #ffffff1f; }
